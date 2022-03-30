@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMEÇANDO COM DOM</title>
+    <style>
+        body {
+            background-color: rgb(7, 54, 54);
+            color:rgb(0, 0, 0);
+            font: normal 17pt sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Starting With DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Learn to be used <strong>DOM</strong> in JavaScript</p>
+    <div id="msg">Click Here</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var d = window.document.getElementById('msg')
+        d.style.color = 'yellow'
+        d.style.background = 'black'
+        p1.style.color = ''
+
+    </script>
+</body>
+</html>

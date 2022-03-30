@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Website</title>
+    <style>
+        div#area {
+            margin: 20px 50% 0 50%;
+            font: bolder 18pt Arial;
+            background: blueviolet;
+            color:gold;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            align-items: baseline;
+        } 
+     </style>
+    <style>
+       body {
+           background-color: rgb(8, 5, 5);
+           color: cornsilk;
+           font: normal 14pt Arial; 
+       }
+       h1{
+           color: gold;
+       }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO MY WEBSITE FOR SAD PEOPLE</h1>
+    <p>if you are a sad people, please continues..</p>
+    <input type="text" placeholder="TYPE IT HERE"> 
+
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" > 
+        interact
+
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+
+
+        function clicar() {
+            a.innerText = 'CLICKED'
+            a.style.color = 'balck'
+            a.style.background = 'yellow'
+        
+            
+        }
+        function entrar() {
+            a.innerText = 'Entrou'
+            a.style.background = 'red'
+            a.style.color = 'black'
+        }
+        function sair() {
+            a.innerText = 'saiu'
+            a.style.background = 'green'
+            a.style.color = 'blue'
+        }
+
+        
+    </script>
+    <script>
+    var nome = window.prompt('type your name')
+    window.alert(`Nice to meet you ${nome}`)
+
+    
+    </script>   
+</body>
+</html>
