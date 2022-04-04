@@ -18,7 +18,7 @@ time.sleep(1)
 print(separar)
 hoje = 'HOJE, VOU ADIVINHAR QUEM VOCÊ É \n '
 pergunta = 'VOU FAZER ALGUMAS PERGUNTAS! \n'
-preparado = 'PREPARADO(a)? \n'
+preparado = 'PREPARADO(a)? /n'
 for char in hoje:
           time.sleep(0.06)
           sys.stdout.write(char)
