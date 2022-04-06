@@ -3,7 +3,7 @@ import time
 
 
 print("vou pensar em um numero, adivinhe!")
-pc = randint(0,1)
+pc = randint(0,5)
 ask = int(input("que numero eu pensei? "))
 if ask == pc:
     print("você ganhou")
