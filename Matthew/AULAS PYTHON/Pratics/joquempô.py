@@ -7,7 +7,12 @@ print('''YOUR CHOICES:
 [0] STONE
 [1] PAPER
 [2] SCISSORS''')
-player1 = int(input("whats your play? "))
+player1 = int(input("Qual a Sua Jogada? "))
+print("JO")
+time.sleep(1)
+print("KEN")
+time.sleep(1)
+print("PO!!!")
 print("-="*10)
 print("pc escolheu {}".format(itens[pc]))
 print("jogador jogou {}".format(itens[player1]))
