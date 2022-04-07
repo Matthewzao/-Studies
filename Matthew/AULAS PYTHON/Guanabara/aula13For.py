@@ -27,7 +27,7 @@ media_4 = float(input('informa só mais uma nota: '))
 soma = (media_1 + media_2 + media_3 + media_4) /4
 print("sua media é:", soma)
 
-                                             EXEMPLO DE FOR's
+                                            #  EXEMPLO DE FOR's
 
 for i in range(10, 0, -1):
     print(i)

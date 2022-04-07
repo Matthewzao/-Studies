@@ -14,11 +14,11 @@ if ativo and logado:
 else:
     print("You need active your account")
 
-# print(ativo is True)
+print(ativo is True)
 
-# if not ativo:
-#     print("You need actvie your account, please check your email")
-# else:
-#     print("Welcome")
+if not ativo:
+    print("You need actvie your account, please check your email")
+else:
+    print("Welcome")
 
 
