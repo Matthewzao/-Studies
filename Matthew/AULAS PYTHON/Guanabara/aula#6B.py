@@ -7,7 +7,7 @@
 # n = input('type somethin:')
 # print(n.isnumeric())
 
-n =input('type something:')
+n =input('type something: ')
 print(n.isalpha())
 
 
