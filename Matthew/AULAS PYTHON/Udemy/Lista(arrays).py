@@ -52,8 +52,5 @@ lista1 =[1,233,33,54,78,8,97]
 
 # Removendo elemento pelo índice
 # OBS: Os elementos da direita -> são deslocados para a esqueda <-
-lista.pop(5 and 6)
+lista.pop(5)
 print(lista)
-
-
-
