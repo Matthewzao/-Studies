@@ -11,12 +11,17 @@
 
 # UMA FORMA MAIS SIMPLES DE IMPRIMIR OS NUMEROS PARES
 
-fim = int(input("digite um numero a imprimir: "))
-x = 0
-while x <= fim:
-    print(x)
-    x = x+2
+# fim = int(input("digite um numero a imprimir: "))
+# x = 0
+# while x <= fim:
+#     print(x)
+#     x = x+2
 
 
 
+n = int(input("tabuada de: "))
+x=1
+while x<=10:
+    print(n+x)
+    x=x+1
 
