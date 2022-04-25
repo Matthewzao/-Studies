@@ -19,18 +19,18 @@
 
 # # TABUADA
 
-# n = int(input("tabuada de: "))
-# x=1
-# while x<=10:
-#     print(n*x)
-#     x=x+1
+n = int(input("tabuada de: "))
+x=1
+while x<=10:
+    print(n*x)
+    x=x+1
 
 
 # SOMADOR COM BREAK
-s = 0
-while True:
-    v=int(input('digite um numero a somar ou 0 para sair: '))
-    if v==0:
-        break
-    s= s+v
-print(s)
+# s = 0
+# while True:
+#     v=int(input('digite um numero a somar ou 0 para sair: '))
+#     if v==0:
+#         break
+#     s= s+v
+# print(s)
