@@ -1,4 +1,12 @@
-from re import T
+import os, sys
+
+dirpath = os.getcwd()
+sys.path.append(dirpath)
+
+if getattr(sys, "frozen", False):
+    os.chdir(sys.MEIPASS)
+
+
 import pygame
 from sys import exit
 from random import randint
@@ -6,7 +14,8 @@ from random import randint
 # INICIALIZANDO O PYGAME
 pygame.init()
 
-
+# Inserindo e tocando musica
+colisaoSong = pygame.mixer.Sound('smw_coin.wav')
 
 altura = 1000
 largura = 900
@@ -29,11 +38,11 @@ relogio = pygame.time.Clock()                                   #ADICIONANDO UM 
 
 while True:
     relogio.tick(60)                                            #CONTROLANDO O FPS   
-    tela.fill((0,0,0))                                          #AQUI DETERMINA QUE A PARTE PRETA PREENCHA O RESTO DA TELA, PARA DAR O EFEITO DE ANIMAÇÃO
+    tela.fill((18,20,20))                                          #AQUI DETERMINA QUE A PARTE PRETA PREENCHA O RESTO DA TELA, PARA DAR O EFEITO DE ANIMAÇÃO
     mensagem = f'Pontos: {pontos}'                              
     mensagem2 = f'Pontos: {pontos2}'
-    textoFormatado = fonte.render(mensagem, False,(255,255,0))
-    textoFormatado2 = fonte2.render(mensagem2, True,(255,255,255))
+    textoFormatado = fonte.render(mensagem, False,(200,0,0))
+    textoFormatado2 = fonte2.render(mensagem2, True,(250,100,200))
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:                           #PARA O PROGRAMA FECHAR QUANDO CLICADO NO X
@@ -56,9 +65,9 @@ while True:
         #     if event.key == pygame.K_x:
         #         x = x +400
 
-                #MEXER OBJETO COM TECLA PRESSIONADA
+            #MEXER OBJETO COM TECLA PRESSIONADA
 
-            # PLAYER1
+# PLAYER1
     if pygame.key.get_pressed()[pygame.K_a]:
         x = x -5   
     if pygame.key.get_pressed()[pygame.K_d]:
@@ -78,9 +87,9 @@ while True:
         b = b -5
 
 
-                #CONDIÇÃO DE COLISÃO
-    retanguloVermelho = pygame.draw.rect(tela, (255,0,0), (x,y,25,25))
-    retanguloPlayer2 = pygame.draw.rect(tela, (255,0,0), (b,a,25,25))
+ #CONDIÇÃO DE COLISÃO                            COR            TAMANHO
+    retanguloVermelho = pygame.draw.rect(tela, (200,0,0), (x,y,25,25))
+    retanguloPlayer2 = pygame.draw.rect(tela, (250,100,200), (b,a,25,25))
 
     retarnguloAzul = pygame.draw.rect(tela, (0,255,255), (x_azul,y_azul,6,6))
     retarnguloBranco = pygame.draw.rect(tela, (0,255,222), (b_azul,a_azul,6,6))
@@ -89,14 +98,16 @@ while True:
         x_azul = randint(40,600)
         y_azul = randint(50,430)
         pontos = pontos +1
+        colisaoSong.play()
 
     if retanguloPlayer2.colliderect(retarnguloBranco):
         b_azul = randint(40,700)
         a_azul = randint(50,430)
         pontos2 = pontos2 +1
+        colisaoSong.play()
 
-            #MOSTRANDO PONTUAÇÃO NA TELA
+#MOSTRANDO PONTUAÇÃO NA TELA
     tela.blit(textoFormatado,(800,40))
-    tela.blit(textoFormatado2,(100,40))
+    tela.blit(textoFormatado2,(600,40))
 
     pygame.display.update()
