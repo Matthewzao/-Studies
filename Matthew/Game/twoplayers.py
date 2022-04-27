@@ -2,6 +2,7 @@ import pygame
 import pygame.freetype
 import random
 
+
 pygame.init()
 FONT = pygame.freetype.SysFont(None, 32)
 
