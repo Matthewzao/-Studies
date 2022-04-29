@@ -1,12 +1,5 @@
-import os, sys
 
-dirpath = os.getcwd()
-sys.path.append(dirpath)
-
-if getattr(sys, "frozen", False):
-    os.chdir(sys.MEIPASS)
-
-
+from sre_parse import State
 import pygame
 from sys import exit
 from random import randint
@@ -27,6 +20,8 @@ a = altura /2
 
 pontos = 0
 pontos2 = 0
+
+
 fonte = pygame.font.SysFont('papyrus',20,True, True)
 fonte2 = pygame.font.SysFont('papyrus',20,True, True)
 x_azul = randint(40,700)
@@ -35,6 +30,7 @@ b_azul = randint(40,700)
 a_azul = randint(50,430)
 pygame.display.set_caption("Matthew's Game")
 relogio = pygame.time.Clock()                                   #ADICIONANDO UM FPS
+pause = False
 
 while True:
     relogio.tick(60)                                            #CONTROLANDO O FPS   
@@ -99,12 +95,17 @@ while True:
         y_azul = randint(50,430)
         pontos = pontos +1
         colisaoSong.play()
-
+        if pontos == 5:
+            break
+            
+            
     if retanguloPlayer2.colliderect(retarnguloBranco):
         b_azul = randint(40,700)
         a_azul = randint(50,430)
         pontos2 = pontos2 +1
         colisaoSong.play()
+        if pontos2 ==3:
+            break
 
 #MOSTRANDO PONTUAÇÃO NA TELA
     tela.blit(textoFormatado,(800,40))
