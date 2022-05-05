@@ -95,7 +95,7 @@ while True:
         y_azul = randint(50,430)
         pontos = pontos +1
         colisaoSong.play()
-        if pontos == 5:
+        if pontos == 10:
             break
             
             
@@ -104,7 +104,7 @@ while True:
         a_azul = randint(50,430)
         pontos2 = pontos2 +1
         colisaoSong.play()
-        if pontos2 ==3:
+        if pontos2 ==10:
             break
 
 #MOSTRANDO PONTUAÇÃO NA TELA
