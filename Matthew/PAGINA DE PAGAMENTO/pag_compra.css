@@ -1,0 +1,338 @@
+* {
+    margin: 0px;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: #e28227;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerbt {
+    text-decoration: none;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 133px;
+}
+
+
+.containermain {
+    margin: 40px 0 0 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(253, 253, 253);
+}
+
+.dados_comprador {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container1,
+.container2,
+.container3,
+.container4 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.caminho {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.container1 h1,
+.container2 h1,
+.container3 h1,
+.container4 h1 {
+    font-weight: 400;
+
+}
+
+.resposta,
+.resposta1 {
+    font-weight: 300;
+}
+
+.resposta {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.resposta input {
+    width: calc(100%-5px);
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #727272;
+    height: 35px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
+}
+
+.resposta1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.resposta1 input {
+    width: calc(100%-5px);
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #727272;
+    height: 35px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
+}
+
+.respostaGenero {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Roboto";
+}
+
+.respostaGenero select {
+    height: 25px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
+
+
+}
+
+.naoQuero label {
+    font-size: 13px;
+
+}
+
+
+.frete {
+    width: 300px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
+    transition: 0.3s;
+}
+
+.precoFrete {
+    color: rgb(10, 85, 10);
+    text-align: left;
+    font-style: normal;
+    margin: 2px;
+}
+
+.containermain2 {
+    margin: 40px 0 0 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+
+.pag {
+    width: 300px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
+    transition: 0.3s;
+
+
+
+}
+
+.pag input {
+    margin-left: 10px;
+
+}
+
+.pagInfo {
+    margin-left: 5px;
+}
+
+
+.frete input {
+    margin-left: 10px;
+}
+
+.freteInfo {
+    margin-left: 5px;
+}
+
+
+.frete:hover {
+    background-color: #89e676;
+    color: black;
+}
+
+
+
+.pag:hover {
+    background-color: #89e676;
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+.containermain3 h1 {
+    display: flex;
+    justify-content: space-around
+}
+
+.descPag {
+    color: rgb(10, 85, 10);
+    text-align: left;
+    font-style: normal;
+    margin: 2px;
+}
+
+.frete input {
+    width: calc(100%-5px);
+    height: 30px;
+    /* padding-left: 5px; */
+    border-radius: 5px;
+    border: 1px solid #727272;
+}
+
+.pag input {
+    width: calc(100%-5px);
+    height: 25px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: px solid #727272;
+}
+
+
+strong {
+    font-size: 12px;
+}
+
+.containermain3 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    /* margin-top: 50px; */
+    /* margin-left: 800px; */
+    border-radius: 5px;
+    display: flex;
+    padding: 5px 30px;
+    background-color: rgb(115, 202, 97);
+    border: 2px solid rgb(84, 150, 71);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(115, 202, 97);
+    display: inline;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.5s;
+
+
+}
+
+/* header h1 {
+    margin-top: 20px;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: #ec922b;
+} */
+
+/* HOVER */
+
+
+
+/* 
+button:hover {
+    background-color: rgb(192, 112, 47);
+    color: rgb(206, 149, 74);
+    border: 1px solid #4CAF50;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline;
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    width: 200px;
+    transition: 0.2s;
+    cursor: pointer;
+} */
+
+
+
+
+
+
+
+.resposta:hover {
+    color: rgb(235, 155, 109);
+    border-color: rgb(235, 155, 109);
+
+}
+
+.resposta1:hover {
+    color: rgb(235, 155, 109);
+    border-color: rgb(235, 155, 109);
+
+}
+
+
+#label {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: -10px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+#input {
+    height: 35px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
+}
+
+.resposta input:focus {
+    outline: none;
+}
+
+.resposta label,
+.resposta1 label {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: -10px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+img {
+    border-left: 1px;
+}

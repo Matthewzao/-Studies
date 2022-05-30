@@ -33,6 +33,7 @@ pyautogui.click(button="left")
 pyautogui.moveTo(1349,831)
 pyautogui.click(button="left")
 
+
 # posicao = pyautogui.position()
 # print(posicao)
 

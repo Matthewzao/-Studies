@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalização da Compra</title>
+    <link rel="stylesheet" href="pag_compra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <a class="headerbt" href="">
+            <img class="logo" src="9TECH.png" height="160" width="160">
+        </a>
+    </div>
+    <div class="containermain">
+        <div class="container1">
+            <h1>Dados do Comprador</h1>
+
+            <div class="dados_comprador">
+                <div class="resposta">
+                    <input id="input" placeholder="" type="text">
+                    <label id="label">Nome Completo:</label>
+                </div>
+                <div class="resposta">
+                    <label>Nascimento:</label>
+                    <input placeholder="" type="text">
+                </div>
+                <div class="resposta">
+                    <label>Email:</label>
+                    <input placeholder="" type="email">
+                </div>
+                <div class="resposta">
+                    <label>Celular:</label> <input placeholder="" type="tel">
+                </div>
+                <div class="resposta">
+                    <label>CPF:</label>
+                    <input placeholder="" type="float">
+                </div>
+                <div class="respostaGenero">
+                    <div>
+                        <label>Gênero:</label>
+                        <select name="Genero">Genero
+                            <option selected disabled value="">Selecione</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                        </select>
+                    </div>
+                    <div class="naoQuero">
+                        <input type="checkbox" data-rotulo="" id="ClienteNascimentoVazio1" name="nao-quero" value="1"
+                            class="a" checked="checked">
+                        <label class="cursor" for="nao-quero">Não quero informar</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <h1>Endereço de Envio</h1>
+            <div class="caminho">
+                <div class="resposta1">
+                    <label>CEP:</label>
+                    <input type="float">
+                </div>
+                <div class="resposta1">
+                    <label>Endereço:</label>
+                    <input type="text">
+                </div>
+                <div class="resposta1">
+                    <label>Complemento:</label>
+                    <input type="text">
+                </div>
+                <div class="resposta1">
+                    <label>Bairro:</label>
+                    <input type="text">
+                </div>
+                <div class="resposta1">
+                    <label>Cidade:</label>
+                    <input type="text">
+                </div>
+                <div class="resposta1">
+                    <label>Estado:</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="containermain2">
+        <div class="container3">
+            <h1>Escolha um Método de Envio</h1>
+            <form action="">
+                <div class="metodoEnvio">
+                    <label class="frete">
+                        <input type="radio">
+                        <div class="freteInfo">
+                            <label>MelhorEnvio - Correios SEDEX</label>
+                            <p class="precoFrete">
+                                <strong>R$16,45</strong>
+                            </p>
+                        </div>
+                    </label>
+                    <label class="frete">
+                        <input type="radio">
+                        <div class="freteInfo">
+                            <label>MelhorEnvio - Correios PAC</label>
+                            <p class="precoFrete">
+                                <strong>R$16,45</strong>
+                            </p>
+                        </div>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="container4">
+            <h1>Escolha um Método de Pagamento</h1>
+            <div class="metodoPag">
+                <label class="pag">
+                    <input class="efe" type="radio">
+                    <div class="pagInfo">
+                        <label>Cartão de Crédito</label>
+                        <p class="descPag">
+                            <strong>10% de Desconto</strong>
+                        </p>
+                    </div>
+                </label>
+                <label class="pag">
+                    <input type="radio">
+                    <div class="pagInfo">
+                        <label>Boleto</label>
+                        <p class="descPag">
+                            <strong>5% de Desconto</strong>
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="containermain3">
+        <button>FINALIZAR</button>
+    </div>
+</body>
+
+</html>

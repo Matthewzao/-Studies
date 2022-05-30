@@ -71,7 +71,7 @@ def main():
     player1 = Game(pygame.Color('dodgerblue'), (30, 30, 30), player1_bindings, True)
     player2 = Game(pygame.Color('orange'), (80, 20, 30), player2_bindings, False)
     games = pygame.sprite.Group(player1, player2)
-
+    
     while True:
         for e in pygame.event.get():
             if e.type == pygame.QUIT:

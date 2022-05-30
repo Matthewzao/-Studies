@@ -100,7 +100,7 @@ while True:
             
             
     if retanguloPlayer2.colliderect(retarnguloBranco):
-        b_azul = randint(40,700)
+        b_azul = randint(40,700)d
         a_azul = randint(50,430)
         pontos2 = pontos2 +1
         colisaoSong.play()
