@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#s1,
+#s2,
+#s3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 16, 16);
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+
+
+}
+
+#s1Content,
+#s2Content,
+#s3Content {
+    border-radius: 20px;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(26, 47, 21);
+    background: linear-gradient(0deg, rgba(26, 47, 21, 1) 0%, rgba(60, 109, 50, 1) 50%, rgba(86, 156, 72, 1) 100%);
+    position: relative;
+    padding: 30px;
+
+
+}
+
+#s2Content {
+    border: 2px solid rgb(57, 77, 185);
+}
+
+#s1Content {
+    border: 2px solid rgb(235, 120, 120);
+}
+
+#s3Content {
+    border: 2px solid white;
+}
+
+h1 {
+    /* color: rgb(143, 218, 147); */
+    color: white;
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
+
+}
+
+.imagem {
+    height: 300px;
+}
+
+.wiki {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+.young_wiki {
+    font-size: 20px;
+}
+
+h1:hover {
+    color: brown;
+}
+
+.botao_seta {
+    width: auto;
+    height: auto;
+
+
+}
+
+.Arrow {
+    padding: 15px;
+    box-shadow: 2px -2px 0 1px #FFF inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 30px;
+    animation: arrowMotion 1s infinite;
+
+
+}
+
+@keyframes arrowMotion {
+
+    0% {
+        bottom: 30px
+    }
+
+    50% {
+        bottom: 35px
+    }
+
+    100% {
+        bottom: 30px
+    }
+
+
+
+}
